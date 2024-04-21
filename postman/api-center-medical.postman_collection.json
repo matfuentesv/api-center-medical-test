@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "94061c8b-425a-434f-ab43-6ed354df88f2",
+		"name": "api-center-medical",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29351789"
+	},
+	"item": [
+		{
+			"name": "findHistoryPatientByRun",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/api/findHistoryPatientByRun/19033361-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"findHistoryPatientByRun",
+						"19033361-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllDoctor",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/api/findAllDoctor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"findAllDoctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findDoctor",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/api/findDoctorByRun/88889999-3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"findDoctorByRun",
+						"88889999-3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createDoctor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Fernanda\",\r\n    \"apellido\": \"Ruiz\",\r\n    \"especializacion\": \"Dermatología\",\r\n    \"celular\": \"+56900001111\",\r\n    \"email\": \"fernandaruiz@example.com\",\r\n    \"horaConsulta\": \"17:00 - 21:00\",\r\n    \"hospital\": \"Hospital Norte\",\r\n    \"run\": \"00001111-4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/createDoctor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"createDoctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateDoctor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Daniel\",\r\n    \"apellido\": \"Fuentes\",\r\n    \"especializacion\": \"Nefrologia\",\r\n    \"celular\": \"+56988889999\",\r\n    \"email\": \"danieldiaz@example.com\",\r\n    \"horaConsulta\": \"16:00 - 20:00\",\r\n    \"hospital\": \"Hospital Central\",\r\n    \"run\": \"88889999-3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/updateDoctor/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"updateDoctor",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteDoctor",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/deleteDoctor/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"deleteDoctor",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllPatient",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/api/findAllPatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"findAllPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findPatient",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/api/findPatientByRun/11223344-5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"findPatientByRun",
+						"11223344-5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPatient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Sebastian\",\r\n    \"apellido\": \"Cardenas\",\r\n    \"edad\": 21,\r\n    \"direccion\": \"Los naranjos\",\r\n    \"celular\": \"962793212\",\r\n    \"run\": \"19033397-3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/createPatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"createPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePatient",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Sebastian\",\r\n    \"apellido\": \"Valenzuela\",\r\n    \"edad\": 44,\r\n    \"direccion\": \"Los naranjos\",\r\n    \"celular\": \"962793212\",\r\n    \"run\": \"19033397-3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/updatePatient/35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"updatePatient",
+						"35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePatient",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514200",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/deletePatient/35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"deletePatient",
+						"35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "H514201",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/api/findUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"findUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

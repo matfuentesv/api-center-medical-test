@@ -9,14 +9,14 @@ import java.util.List;
 import java.util.Optional;
 
 public interface MedicalService {
-
+    boolean findUser(String user, String password);
     Optional<User> findUser(String user);
     List<HistoricalMedical> getHistoryPatientByRun(String run);
     List<Doctor> getAllDoctor();
     Optional<Doctor> findDoctorByRun(String run);
     Doctor createDoctor(Doctor doctor);
     Doctor updateDoctor(Doctor doctor);
-    void deleteDoctor(Long id);
+    void deleteDoctor(Doctor doctor);
     boolean existsDoctorById(Long id);
     List<Patient> getAllPatient();
     Optional<Patient> findPatientByRun(String run);

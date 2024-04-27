@@ -21,6 +21,8 @@ import java.util.stream.Collectors;
 @Service
 public class MedicalServiceImpl implements MedicalService {
 
+    @Autowired
+    private UserRepository userRepository;
 
     @Autowired
     private DoctorRepository doctorRepository;
@@ -30,9 +32,12 @@ public class MedicalServiceImpl implements MedicalService {
 
     @Autowired
     private MedicalRecordRepository medicalRecordRepository;
-    @Autowired
-    private UserRepository userRepository;
 
+
+    @Override
+    public boolean findUser(String user, String password) {
+        return userRepository.findByUserPassword(user,password).isPresent();
+    }
 
     @Override
     public Optional<User> findUser(String user) {
@@ -70,8 +75,8 @@ public class MedicalServiceImpl implements MedicalService {
     }
 
     @Override
-    public void deleteDoctor(Long id) {
-        doctorRepository.deleteById(id);
+    public void deleteDoctor(Doctor doctor) {
+        doctorRepository.delete(doctor);
     }
 
     @Override

@@ -2,9 +2,10 @@ package cl.company.center.medical.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import org.springframework.hateoas.RepresentationModel;
 
 @Entity(name = "Historial_Medico")
-public class HistoricalMedical {
+public class HistoricalMedical extends RepresentationModel<HistoricalMedical> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

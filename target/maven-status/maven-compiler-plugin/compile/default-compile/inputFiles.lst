@@ -1,0 +1,14 @@
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\exception\CenterMedicalNotFoundException.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\controller\CenterMedicalController.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\repository\PatientRepository.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\repository\MedicalRecordRepository.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\exception\ErrorResponse.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\model\User.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\repository\DoctorRepository.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\model\Doctor.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\service\impl\MedicalServiceImpl.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\service\MedicalService.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\ApiCenterMedicalApplication.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\repository\UserRepository.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\model\HistoricalMedical.java
+C:\Users\O009920\Documents\api-center-medical-test\src\main\java\cl\company\center\medical\model\Patient.java

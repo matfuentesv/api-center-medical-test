@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: cl.company.center.medical.controller.CenterMedicalControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.225 s -- in cl.company.center.medical.controller.CenterMedicalControllerTest

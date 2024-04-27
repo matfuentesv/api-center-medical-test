@@ -3,9 +3,10 @@ package cl.company.center.medical.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import org.springframework.hateoas.RepresentationModel;
 
 @Entity(name = "Usuario")
-public class User {
+public class User extends RepresentationModel<User> {
 
     @Id
     private Long id;

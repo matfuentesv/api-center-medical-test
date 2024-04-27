@@ -1,0 +1,14 @@
+cl\company\center\medical\service\impl\MedicalServiceImpl.class
+cl\company\center\medical\exception\ErrorResponse.class
+cl\company\center\medical\ApiCenterMedicalApplication.class
+cl\company\center\medical\model\Doctor.class
+cl\company\center\medical\controller\CenterMedicalController.class
+cl\company\center\medical\repository\DoctorRepository.class
+cl\company\center\medical\repository\UserRepository.class
+cl\company\center\medical\model\Patient.class
+cl\company\center\medical\repository\MedicalRecordRepository.class
+cl\company\center\medical\exception\CenterMedicalNotFoundException.class
+cl\company\center\medical\service\MedicalService.class
+cl\company\center\medical\model\HistoricalMedical.class
+cl\company\center\medical\model\User.class
+cl\company\center\medical\repository\PatientRepository.class

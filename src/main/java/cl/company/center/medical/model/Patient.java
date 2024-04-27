@@ -4,9 +4,10 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+import org.springframework.hateoas.RepresentationModel;
 
 @Entity(name = "Paciente")
-public class Patient {
+public class Patient extends RepresentationModel<Patient> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -94,7 +95,8 @@ public class Patient {
         return celular;
     }
 
-    public void setCelular(String celular) {
+    public Patient setCelular(String celular) {
         this.celular = celular;
+        return this;
     }
 }

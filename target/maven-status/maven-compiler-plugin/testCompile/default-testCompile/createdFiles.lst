@@ -1,0 +1,4 @@
+cl\company\center\medical\ApiCenterMedicalApplicationTests.class
+cl\company\center\medical\repository\PatientRepositoryTest.class
+cl\company\center\medical\controller\CenterMedicalControllerTest.class
+cl\company\center\medical\service\PatientServiceTest.class

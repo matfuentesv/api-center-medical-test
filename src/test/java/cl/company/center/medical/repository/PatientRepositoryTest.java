@@ -35,7 +35,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
     }
 
     @Test
-    void testFindCustomerAll() {
+    void testFindPatientAll() {
 
         Patient patient = new Patient()
                 .setNombre("Juan")
@@ -55,7 +55,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
     @Test
-    void saveCustomer() {
+    void savePatient() {
 
         Patient patient = new Patient()
                 .setNombre("Juan")
@@ -72,7 +72,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
     @Test
     @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-    void updateCustomer() {
+    void updatePatient() {
 
         Patient patient = new Patient()
                 .setNombre("Juan")
